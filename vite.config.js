@@ -9,5 +9,8 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.jsx',
     exclude: ['node_modules', 'dist'],
+    deps: {
+      fallbackCJS: true, // <-- fix JSDOM + CJS deps
+    },
   },
 })
