@@ -28,6 +28,9 @@ jobs:
         - name: "List directoories"
           run: ls  
 
+        - name: "Lint Code"
+          run: npm run lint
+
         - name: "Run Tests"
           run: npm test
           
